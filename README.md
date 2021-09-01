@@ -1,6 +1,6 @@
 # WatchList 🍿
 
-Welcome to my first React Project! I´m working on this project to gain more knowledge and practice my React skills.
+Welcome to my first React Project! I'm working on this project to gain more knowledge and practice my React skills.
 This is the third version of WatchList, and it's repo has very few commits and comments. You can find older versions (not production-ready like this) and see how I worked them out in their respective repos:
 - [WatchList-v1](https://github.com/ucielsola/WatchList-old) ⚰
 - [WatchList-v2](https://github.com/ucielsola/watchlist-v2-old) 🧓🏽
