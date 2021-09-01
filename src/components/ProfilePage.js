@@ -58,8 +58,8 @@ export const ProfilePage = () => {
 	async function handleLogout() {
 		setError('');
 		try {
-			await logout();
 			history.push('/watchlist/login');
+			await logout();
 		} catch (error) {
 			setError('Failed to log out');
 		}
