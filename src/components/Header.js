@@ -31,7 +31,7 @@ export const Header = () => {
 						</div>
 					</Link>
 				</div>
-				<ThemeSwitcher />
+				{currentUser && <ThemeSwitcher />}
 				{currentUser ? <Navigation /> : <NotLoggedInBtns />}
 			</div>
 		</header>
