@@ -45,7 +45,9 @@ export const LogIn = () => {
 					</div>
 					<div className={'form__group' + darkClass}>
 						<div className="forgot">
-							<Link to="/forgot-password">Forgot Password?</Link>
+							<Link to="/forgot-password" tabIndex="-1">
+								Forgot Password?
+							</Link>
 						</div>
 						<input
 							type="password"
