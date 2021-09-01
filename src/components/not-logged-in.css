@@ -1,0 +1,21 @@
+@import url('./root.css');
+
+.nli__container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.nli__button {
+	width: fit-content;
+	margin-inline: 1rem;
+	padding: 0.3rem 0.5rem;
+	font-family: var(--font-family);
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: var(--dark-txt);
+	border-color: transparent;
+	border-radius: 5px;
+	background: var(--primary);
+	box-shadow: var(--box-shadow);
+}

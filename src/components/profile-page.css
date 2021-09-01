@@ -1,0 +1,24 @@
+@import url('./root.css');
+
+.page__container {
+	position: relative;
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Dark Theme */
+
+.page__container.dark {
+	background-color: var(--dark-200);
+}

@@ -1,0 +1,126 @@
+@import url('./root.css');
+
+.fullcard__item {
+	display: flex;
+	flex-direction: row;
+	height: 20rem;
+	width: 100%;
+	max-height: 19.68rem;
+	max-width: 39.53rem;
+	padding: 0.5rem;
+	border-radius: var(--radius);
+	background: var(--fullcard-light-bg);
+	box-shadow: var(--box-shadow);
+}
+
+.fullcard__poster-wrapper {
+	display: grid;
+	place-items: center;
+}
+.fullcard__poster-wrapper img {
+	border-radius: var(--radius);
+}
+
+.fullcard__info {
+	position: relative;
+	width: 100%;
+	padding-left: 0.5rem;
+}
+
+.fullcard__title,
+.fullcard__date,
+.fullcard__overview {
+	font-family: var(--font-family);
+
+	color: var(--light-txt);
+}
+
+.fullcard__title {
+	font-size: 1.5rem;
+}
+
+.fullcard__date {
+	font-size: 0.9rem;
+	font-style: italic;
+}
+
+.fullcard__overview {
+	padding-top: 0.7rem;
+	font-size: 1rem;
+}
+
+.fullcard__controls {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.fullcard__button {
+	background: var(--primary);
+	padding: 0.5rem;
+	font-family: var(--font-family);
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: var(--dark-txt);
+	margin-inline: 1rem;
+	border-radius: var(--radius);
+	border-color: transparent;
+	box-shadow: var(--box-shadow);
+	cursor: pointer;
+}
+
+.fullcard__button:disabled,
+.fullcard__button.dark:disabled {
+	cursor: default;
+	pointer-events: none;
+	background-color: var(--btn-disabled);
+}
+
+/* Dark Theme */
+
+.fullcard__item.dark {
+	display: flex;
+	flex-direction: row;
+	height: 315px;
+	width: 632.5px;
+	padding: 0.5rem;
+	border-radius: var(--radius);
+	background: var(--fullcard-dark-bg);
+	box-shadow: var(--box-shadow);
+}
+
+.fullcard__title.dark,
+.fullcard__date.dark,
+.fullcard__overview.dark,
+.fullcard__button.dark {
+	color: var(--dark-txt);
+}
+
+.fullcard__button.dark {
+	border-color: transparent;
+	background: var(--primary);
+	box-shadow: var(--box-shadow);
+}
+
+@media only screen and (max-width: 42rem) {
+	.fullcard__item {
+		flex-direction: column;
+		height: unset;
+		max-height: unset;
+	}
+	.fullcard__controls {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-block: 1rem;
+	}
+}
+
+@media only screen and (max-width: 29rem) {
+	.fullcard__button {
+		padding: 0.3rem;
+		font-family: var(--font-family);
+		font-size: 0.9rem;
+	}
+}

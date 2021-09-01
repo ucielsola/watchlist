@@ -1,0 +1,32 @@
+@import url('./root.css');
+
+.watched__container {
+	min-height: 100vh;
+	padding: 6rem 2rem;
+	overflow: hidden;
+	background-color: var(--light-100);
+}
+
+.watched__title,
+.watched__subtitle {
+	font-family: var(--font-family);
+	color: var(--light-txt);
+}
+
+.watched__title {
+	margin-top: 0;
+	font-size: 2.2rem;
+}
+.watched__subtitle {
+	font-size: 1.1rem;
+}
+
+/* Dark Theme */
+.watched__container.dark {
+	background-color: var(--dark-200);
+}
+
+.watched__title.dark,
+.watched__subtitle.dark {
+	color: var(--dark-txt);
+}

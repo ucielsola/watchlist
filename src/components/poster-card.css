@@ -1,0 +1,112 @@
+@import url('./root.css');
+
+.poster-card__container {
+	display: grid;
+	place-items: center;
+	gap: 1rem;
+	grid-auto-rows: 22rem;
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	margin-top: 2rem;
+}
+
+.poster-card {
+	position: relative;
+	width: fit-content;
+	height: fit-content;
+	filter: var(--shadow);
+	transition: all 0.15s ease-in-out;
+}
+.poster-card:hover {
+	transition: all 0.15s ease-in-out;
+	transform: scale(1.05);
+}
+
+.poster-card:hover > * {
+	opacity: 1;
+	transition: all 0.15s ease-in-out 0.08s;
+}
+
+.poster-card__overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	border-radius: var(--radius);
+	background: rgba(0, 0, 0, 0.3);
+	transition: all 0.2s ease-in-out;
+}
+
+.poster-card img {
+	border-radius: var(--radius);
+}
+
+.poster-card-controls__container {
+	position: absolute;
+	display: flex;
+	bottom: 0.5rem;
+	right: 0.3rem;
+	opacity: 0;
+	transition: all 0.12s ease-in-out;
+}
+
+.poster-card__ctrl-btn {
+	display: grid;
+	place-items: center;
+	margin: 0 0.4rem;
+	padding: 0.1rem;
+	border: 1px solid var(--dark-violet);
+	border-radius: var(--radius);
+	text-decoration: none;
+	cursor: pointer;
+	filter: var(--shadow);
+	font-size: 1.2rem;
+}
+
+.fa-times,
+.fa-eye,
+.fa-eye-slash {
+	color: var(--dark-txt);
+}
+
+.poster-card__ctrl-btn.eye,
+.poster-card__ctrl-btn.eye-slash {
+	background-color: var(--primary);
+}
+.poster-card__ctrl-btn.times {
+	background-color: red;
+}
+
+@media only screen and (max-width: 1024px) {
+	.poster-card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.poster-card:hover > * {
+		opacity: unset;
+		transition: unset;
+	}
+
+	.poster-card__overlay {
+		display: none;
+	}
+	.poster-card-controls__container {
+		opacity: 1;
+	}
+
+	.poster-card-controls__container {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 100%;
+		bottom: 1rem;
+		right: 0;
+		transition: all 0.12s ease-in-out;
+	}
+
+	.poster-card__ctrl-btn {
+		font-size: 1.5rem;
+	}
+}

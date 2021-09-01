@@ -1,0 +1,116 @@
+@import url('./root.css');
+
+.nav__toggle {
+	display: none;
+}
+
+.nav__container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.nav__link {
+	padding-left: 1.2rem;
+}
+
+.nav__link a {
+	text-decoration: none;
+	font-family: var(--font-family);
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--light-txt);
+}
+
+.nav__link .nav__btn {
+	padding: 0.5rem;
+	border-radius: var(--radius);
+	color: var(--dark-txt);
+	background-color: var(--primary);
+	box-shadow: var(--box-shadow);
+	white-space: nowrap;
+}
+
+.nav__overlay {
+	display: none;
+}
+
+@media only screen and (max-width: 1020px) {
+	.nav__toggle {
+		display: flex;
+		align-content: center;
+		justify-content: flex-end;
+		right: 1.2rem;
+		font-size: 2rem;
+		color: var(--white);
+	}
+
+	.nav__link {
+		padding-left: 1rem;
+		padding-block: 1rem;
+	}
+
+	.nav__container {
+		display: flex;
+		align-items: center;
+		transition: all 0.2s ease-out;
+	}
+
+	.nav__container .nav__list {
+		position: absolute;
+		z-index: 1000;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		top: 0;
+		left: 0;
+		width: 80%;
+		height: 100vh;
+		padding: 1.5rem;
+		background-color: var(--light-100);
+		transform: translateX(-150%);
+		transition: transform 0.2s ease-in-out;
+	}
+
+	.nav__container.dark .nav__list {
+		background-color: var(--dark-200);
+	}
+
+	.nav__container .nav__overlay {
+		position: absolute;
+		display: block;
+		top: 0;
+		right: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: #0006;
+		transform: translateX(-150%);
+		transition: transform 0.2s ease-in-out;
+	}
+
+	.nav__container.open .nav__overlay {
+		position: absolute;
+		transform: translateX(0);
+		transition: transform 0.2s ease-in-out;
+	}
+
+	.nav__container.open .nav__list {
+		transform: translateX(0);
+		transition: transform 0.2s ease-in-out;
+	}
+}
+
+/* Dark Theme */
+
+.nav__link.dark a,
+.nav__toggle.dark {
+	color: var(--dark-txt);
+}

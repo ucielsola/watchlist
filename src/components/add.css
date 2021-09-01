@@ -1,0 +1,125 @@
+@import url('./root.css');
+
+.add__container {
+	min-height: 100vh;
+	padding: 6rem 2rem;
+	overflow: hidden;
+	background-color: var(--light-100);
+}
+
+.add__title,
+.add__subtitle {
+	font-family: var(--font-family);
+	color: var(--light-txt);
+}
+
+.add__title {
+	margin-top: 0;
+	font-size: 2.2rem;
+}
+.add__subtitle {
+	font-size: 1.1rem;
+}
+
+.input__wrapper {
+	display: grid;
+	place-items: center;
+	margin-top: 2rem;
+}
+
+.input__wrapper input {
+	width: 70%;
+	padding: 0.5rem 0.5rem;
+	font-family: var(--font-family);
+	font-size: 1.2rem;
+	color: var(--dark-txt);
+	border-radius: var(--radius);
+	border: 2px solid var(--primary);
+	background-color: var(--dark-300);
+}
+
+.input__wrapper input:focus-visible {
+	outline: none;
+}
+.input__wrapper input::placeholder {
+	color: var(--dark-txt);
+}
+
+.add__results {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(38rem, 1fr));
+	place-items: center;
+	max-width: 81rem;
+	padding-top: 2rem;
+	margin: 0 auto;
+	list-style: none;
+}
+
+.add__gif-container {
+	display: grid;
+	place-items: center;
+	width: 60%;
+	max-width: 34rem;
+	margin: 2rem auto;
+}
+
+.add__gif {
+	width: 100%;
+}
+
+/* DARK THEME */
+
+.add__container.dark {
+	background-color: var(--dark-200);
+}
+
+.add__title.dark,
+.add__subtitle.dark {
+	color: var(--dark-txt);
+}
+.input__wrapper.dark input {
+	background-color: var(--dark-100);
+}
+
+.add__pagination-controls {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem 0 1rem 0;
+}
+
+.add__pagination-button {
+	background: var(--primary);
+	padding: 0.5rem;
+	font-family: var(--font-family);
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: var(--dark-txt);
+	margin-inline: 1rem;
+	border-radius: var(--radius);
+	border-color: transparent;
+	box-shadow: var(--box-shadow);
+	cursor: pointer;
+}
+.add__pagination-button:disabled,
+.add__pagination-button.dark:disabled {
+	cursor: default;
+	pointer-events: none;
+	background-color: var(--btn-disabled);
+}
+
+.add__page-counter,
+.add__error-msg {
+	font-family: var(--font-family);
+	color: var(--light-txt);
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 42rem) {
+	.add__results {
+		grid-template-columns: 1fr;
+	}
+}

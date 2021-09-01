@@ -1,0 +1,32 @@
+@import url('./root.css');
+
+.watchlist__container {
+	min-height: 100vh;
+	padding: 6rem 2rem;
+	overflow: hidden;
+	background-color: var(--light-100);
+}
+
+.watchlist__title,
+.watchlist__subtitle {
+	font-family: var(--font-family);
+	color: var(--light-txt);
+}
+
+.watchlist__title {
+	margin-top: 0;
+	font-size: 2.2rem;
+}
+.watchlist__subtitle {
+	font-size: 1.1rem;
+}
+
+/* Dark Theme */
+.watchlist__container.dark {
+	background-color: var(--dark-200);
+}
+
+.watchlist__title.dark,
+.watchlist__subtitle.dark {
+	color: var(--dark-txt);
+}

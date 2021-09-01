@@ -1,0 +1,62 @@
+@import url('./root.css');
+/* Dark theme settings athe the bottom */
+
+.header__container {
+	position: fixed;
+	z-index: 900;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	padding: 1rem 2rem;
+	box-shadow: var(--box-shadow);
+	background-color: var(--light-100);
+}
+
+.header__brand {
+	display: flex;
+	align-items: center;
+}
+
+.header__brand a {
+	text-decoration: none;
+}
+.header__brand h1 {
+	padding-left: 0.5rem;
+	text-decoration: none;
+	font-family: var(--font-family);
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--light-txt);
+}
+
+.header__logo {
+	display: flex;
+	width: 43px;
+}
+
+.header__logo img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+	.header__container {
+		padding: 0.6rem 1rem;
+		background-color: var(--light-100);
+	}
+	.header__brand h1 {
+		font-size: 1.2rem;
+	}
+	.header__logo img {
+		width: 28px;
+	}
+}
+
+/* DarkTheme */
+
+.header__container.dark {
+	background-color: var(--dark-100);
+}
+
+.header__brand.dark h1 {
+	color: var(--dark-txt);
+}

@@ -1,0 +1,86 @@
+@import url('./root.css');
+/* Dark theme settings at the bottom */
+.switch__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.label-wrapper {
+	min-width: 12ch;
+}
+
+.switch__label {
+	font-family: var(--font-family);
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: var(--light-txt);
+}
+
+.switch__input {
+	position: relative;
+	appearance: none;
+	outline: none;
+	width: 50px;
+	height: 30px;
+	margin-inline: 0.5rem;
+	background-color: var(--dark-300);
+	border: 1px solid var(--dark-200);
+	border-radius: 50px;
+	box-shadow: var(--box-shadow);
+	transition-duration: 200ms;
+}
+
+.switch__input:after {
+	content: '🌞';
+	position: absolute;
+	display: grid;
+	place-items: center;
+	left: 1px;
+	width: 26px;
+	height: 26px;
+	background-color: var(--light-100);
+	border: 1px solid #afafafbd;
+	border-radius: 50%;
+	box-shadow: var(--box-shadow);
+	transition-duration: 200ms;
+}
+
+.switch__input:checked {
+	border-color: var(--button-bg);
+	box-shadow: inset 20px 0 0 0 var(--button-bg);
+	transition-duration: 200ms;
+}
+
+.switch__input:checked:after {
+	left: 20px;
+	box-shadow: -2px 4px 3px rgba(0, 0, 0, 0.05);
+	transition-duration: 200ms;
+}
+
+/* Dark Theme */
+.switch__label.dark {
+	color: var(--dark-txt);
+}
+
+.switch__input.dark {
+	background-color: var(--light-100);
+}
+
+.switch__input.dark:after {
+	content: '🌛';
+	background-color: var(--dark-200);
+}
+
+@media only screen and (max-width: 1024px) {
+	.switch__wrapper {
+		justify-content: flex-end;
+	}
+
+	.switch__label {
+		display: none;
+	}
+	.label-wrapper {
+		display: none;
+	}
+}
