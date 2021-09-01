@@ -24,7 +24,7 @@ export const LogIn = () => {
 			setError('');
 			setLoading(true);
 			await login(emailRef.current.value, passwordRef.current.value);
-			history.push('/watchlist/');
+			history.push('/watchlist/ ');
 		} catch (error) {
 			setError('Failed to log in');
 		}
