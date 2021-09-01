@@ -24,13 +24,13 @@ function App() {
 					<ThemeContext.Provider value={{ darkTheme, setDarkTheme }}>
 						<Header />
 						<Switch>
-							<Route path="/watchslist/signup" component={SignUp} />
-							<Route path="/watchslist/login" component={LogIn} />
-							<Route path="/watchslist/forgot-password" component={ForgotPassword} />
-							<PrivateRoute exact path="/watchslist" component={Watchlist} />
-							<PrivateRoute path="/watchslist/watched" component={Watched} />
-							<PrivateRoute path="/watchslist/add" component={Add} />
-							<PrivateRoute path="/watchslist/profile" component={ProfilePage} />
+							<Route path="/watchlist/signup" component={SignUp} />
+							<Route path="/watchlist/login" component={LogIn} />
+							<Route path="/watchlist/forgot-password" component={ForgotPassword} />
+							<PrivateRoute exact path="/watchlist" component={Watchlist} />
+							<PrivateRoute path="/watchlist/watched" component={Watched} />
+							<PrivateRoute path="/watchlist/add" component={Add} />
+							<PrivateRoute path="/watchlist/profile" component={ProfilePage} />
 						</Switch>
 					</ThemeContext.Provider>
 				</GlobalProvider>
