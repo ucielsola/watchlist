@@ -45,7 +45,7 @@ export const LogIn = () => {
 					</div>
 					<div className={'form__group' + darkClass}>
 						<div className="forgot">
-							<Link to="/forgot-password" tabIndex="-1">
+							<Link to="/watchlist/forgot-password" tabIndex="-1">
 								Forgot Password?
 							</Link>
 						</div>
@@ -67,7 +67,7 @@ export const LogIn = () => {
 					</div>
 				</form>
 				<div className={'to-signup' + darkClass}>
-					New in town? <Link to="/signup">Sign Up!</Link>{' '}
+					New in town? <Link to="/watchlist/signup">Sign Up!</Link>{' '}
 				</div>
 			</div>
 		</div>

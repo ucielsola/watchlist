@@ -82,7 +82,7 @@ export const SignUp = () => {
 					</div>
 				</form>
 				<div className={'to-login' + darkClass}>
-					Already have an account? <Link to="/login">Log In!</Link>
+					Already have an account? <Link to="/watchlist/login">Log In!</Link>
 				</div>
 			</div>
 		</div>

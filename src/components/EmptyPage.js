@@ -19,7 +19,7 @@ export const EmptyPage = () => {
 				</span>{' '}
 				...Such emptiness... Lets find something to watch!{' '}
 				<span className="btn">
-					<Link to="/add" className={'empty-page__add-btn' + darkClass}>
+					<Link to="/watchlist/add" className={'empty-page__add-btn' + darkClass}>
 						+ Add
 					</Link>
 				</span>{' '}

@@ -1,5 +1,5 @@
 {
-	"homepage": "https://ucielsola.github.io/watchlist-v3",
+	"homepage": "https://ucielsola.com/watchlist/",
 	"name": "watchlist",
 	"version": "0.1.0",
 	"private": true,
@@ -13,8 +13,6 @@
 		"uuid": "^8.3.2"
 	},
 	"scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",

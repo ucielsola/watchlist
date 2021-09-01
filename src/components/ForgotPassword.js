@@ -52,13 +52,13 @@ export const ForgotPassword = () => {
 						<button disabled={loading} type="submit" className={'form__submit' + darkClass}>
 							Reset Password
 						</button>
-						<Link to="/login" className="cancel">
+						<Link to="/watchlist/login" className="cancel">
 							Cancel
 						</Link>
 					</div>
 				</form>
 				<div className={'to-signup' + darkClass}>
-					New in town? <Link to="/signup">Sign Up!</Link>{' '}
+					New in town? <Link to="/watchlist/signup">Sign Up!</Link>{' '}
 				</div>
 			</div>
 		</div>

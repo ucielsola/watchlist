@@ -21,7 +21,7 @@ export const Header = () => {
 		<header>
 			<div className={'header__container' + darkClass}>
 				<div className={'header__brand' + darkClass}>
-					<Link to="/">
+					<Link to="/watchlist/">
 						<div className={'header__logo' + darkClass}>
 							<img src={logo} alt="WatchList Logo" />
 							<h1>
@@ -32,7 +32,7 @@ export const Header = () => {
 					</Link>
 				</div>
 				<ThemeSwitcher />
-				{currentUser ? <Navigation /> : <NotLoggedInBtns/>}
+				{currentUser ? <Navigation /> : <NotLoggedInBtns />}
 			</div>
 		</header>
 	);
