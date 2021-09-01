@@ -27,7 +27,7 @@ export const ForgotPassword = () => {
 			await resetPassword(emailRef.current.value);
 			setMessage('Check your inbox for further instructions');
 			setTimeout(() => {
-				history.push("/login");
+				history.push("/watchlist/login");
 			}, 3000);
 		} catch (error) {
 			setError('Failed to reset password');
