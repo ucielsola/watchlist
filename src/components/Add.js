@@ -105,7 +105,7 @@ export const Add = () => {
 										Next
 									</button>
 								</div>
-								<h4 className="add__page-counter">
+								<h4 className={"add__page-counter"+darkClass}>
 									Page {page - 1} of {totalPages} pages
 								</h4>
 							</React.Fragment>

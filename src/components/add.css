@@ -68,6 +68,14 @@
 	width: 100%;
 }
 
+.add__page-counter,
+.add__error-msg {
+	font-family: var(--font-family);
+	color: var(--light-txt);
+	text-align: center;
+	font-size: 1.2rem;
+}
+
 /* DARK THEME */
 
 .add__container.dark {
@@ -110,10 +118,9 @@
 	background-color: var(--btn-disabled);
 }
 
-.add__page-counter,
-.add__error-msg {
+.add__page-counter.dark{
 	font-family: var(--font-family);
-	color: var(--light-txt);
+	color: var(--dark-txt);
 	text-align: center;
 	font-size: 1.2rem;
 }
