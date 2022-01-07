@@ -7,7 +7,7 @@ This is the third version of WatchList, and it's repo has very few commits and c
 
 With WachList you can create a list of Movies and TV Shows you want to watch, or have watched. The search functionality works thanks to the great API from [TheMovieDB](https://themoviedb.org).
 
-### [🎈🎈 Live Demo 🎈🎈](https://ucielsola.com/watchlist)
+### [🎈🎈 Live Demo 🎈🎈](https://watchlist.ucielsola.com)
 
 ## ⭐ Features ⭐
 
