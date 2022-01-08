@@ -1,10 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import "./not-logged-in.css"
+import React from "react";
+import { Link } from "react-router-dom";
+import "./not-logged-in.css";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export const NotLoggedInBtns = () => {
+	// Theme Switcher
+	const { darkTheme } = useContext(ThemeContext);
+
+	let darkClass = darkTheme ? " dark" : "";
+	
 	return (
 		<div className="nli__container">
+			<ThemeSwitcher />
 			<Link to="/login" className="nli__button">
 				Log In
 			</Link>
