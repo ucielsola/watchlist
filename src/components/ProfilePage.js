@@ -44,7 +44,7 @@ export const ProfilePage = () => {
 				// success message and switch to main page after changing mail/pass
 				setMessage('Profile updated succesfully');
 				setTimeout(() => {
-					history.push('/watchlist/');
+					history.push('/');
 				}, 3000);
 			})
 			.catch(() => {
@@ -58,7 +58,7 @@ export const ProfilePage = () => {
 	async function handleLogout() {
 		setError('');
 		try {
-			history.push('/watchlist/login');
+			history.push('/login');
 			await logout();
 		} catch (error) {
 			setError('Failed to log out');

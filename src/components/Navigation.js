@@ -20,22 +20,22 @@ function Navigation() {
 			<nav className={'nav__container' + darkClass + openClass}>
 				<ul className={'nav__list' + darkClass}>
 					<li className={'nav__link' + darkClass} key={uuid_v4()} onClick={() => toggleShowNav(false)}>
-						<NavLink to="/watchlist/" className={'nav__btn' + darkClass}>
+						<NavLink to="/" className={'nav__btn' + darkClass}>
 							Watch List
 						</NavLink>
 					</li>
 					<li className={'nav__link' + darkClass} key={uuid_v4()} onClick={() => toggleShowNav(false)}>
-						<NavLink to="/watchlist/watched" className={'nav__btn' + darkClass}>
+						<NavLink to="/watched" className={'nav__btn' + darkClass}>
 							Watched
 						</NavLink>
 					</li>
 					<li className={'nav__link' + darkClass} key={uuid_v4()} onClick={() => toggleShowNav(false)}>
-						<Link to="/watchlist/add" className={'nav__btn' + darkClass}>
+						<Link to="/add" className={'nav__btn' + darkClass}>
 							+ Add
 						</Link>
 					</li>
 					<li className={'nav__link' + darkClass} key={uuid_v4()} onClick={() => toggleShowNav(false)}>
-						<Link to="/watchlist/profile" className={'nav__btn' + darkClass}>
+						<Link to="/profile" className={'nav__btn' + darkClass}>
 							<i className="fas fa-user"></i> Profile
 						</Link>
 					</li>
