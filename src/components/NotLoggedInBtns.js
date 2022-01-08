@@ -8,7 +8,7 @@ export const NotLoggedInBtns = () => {
 	// Theme Switcher
 	const { darkTheme } = useContext(ThemeContext);
 
-	let darkClass = darkTheme ? " dark" : "";
+	// let darkClass = darkTheme ? " dark" : "";
 
 	return (
 		<div className="nli__container">
