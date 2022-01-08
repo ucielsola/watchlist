@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./not-logged-in.css";
 import { ThemeSwitcher } from "./ThemeSwitcher";
-import { ThemeContext } from "./context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 
 export const NotLoggedInBtns = () => {
 	// Theme Switcher
