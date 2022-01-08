@@ -6,7 +6,7 @@ import { ThemeContext } from "../context/ThemeContext";
 
 export const NotLoggedInBtns = () => {
 	// Theme Switcher
-	const { darkTheme } = useContext(ThemeContext);
+	// const { darkTheme } = useContext(ThemeContext);
 
 	// let darkClass = darkTheme ? " dark" : "";
 
