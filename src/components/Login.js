@@ -86,7 +86,7 @@ export const LogIn = () => {
 						(password)
 					</p>
 				</div>
-				<div className={"to-signup" + darkClass}>
+				<div className={"to-signup go-down" + darkClass}>
 					Want your own account? <Link to="/signup">Sign Up!</Link>{" "}
 				</div>
 			</div>

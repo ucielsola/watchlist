@@ -85,6 +85,10 @@
 	margin-left: 1rem;
 }
 
+.to-signup .go-down {
+	bottom: -4.5rem;
+}
+
 .form__submit,
 .to-signup a,
 .to-login a,
